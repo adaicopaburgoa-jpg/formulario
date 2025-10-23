@@ -1,0 +1,79 @@
+   
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: pink;
+        color: #111;
+    }
+
+    @media screen and (min-width: 480px) {
+        body { background-color: rgb(175, 213, 254); }
+        h1 { color: rgb(47, 114, 177); 
+            font-family: 'cooper', sans-serif}
+    }
+
+    
+    @media screen and (min-width: 992px) {
+        body {
+            background-color: tan;
+            color: rgb(43, 5, 24);
+            
+              font-family: 'Bauhaus93-local', 'Bauhaus 93', sans-serif;
+        }
+        h1 { font-size: 4rem; }
+    }
+
+      @font-face {
+        font-family: 'Bauhaus93-local';
+        src: local('Bauhaus 93'), local('Bauhaus93');
+        
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(12, 6, 81, 0.8);
+        margin: 25px ;
+    }
+
+    input[type=text], input[type=date], input[type=number], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #808280;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 20px;
+      resize: vertical;
+      font: inherit;
+    }
+
+    button, input[type=submit] {
+      background-color: #5c5a5c;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font: inherit;
+      margin-right: 8px;
+    }
+
+    button[type=submit]:hover, input[type=submit]:hover {
+      background-color: #444243;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    label { font-family: cursive; }
+    .acciones { margin-top: 8px; }
+   
